@@ -5,7 +5,7 @@ login:               <%= ENV["obtvse_login"] ? ENV["obtvse_login"] : "username" 
 password:            <%= ENV["obtvse_password"] ? ENV["obtvse_password"] : "password" %>
 name:                Joost Oostdijk
 twitter:             joustava
-github:              https://github.com/joustava
+github:              joustava
 email:               joustava@gmail.com
 google_analytics_id: UA-37405240-1
 disqus_shortname:    <%= ENV.fetch("disqus_shortname") { "" } %>
