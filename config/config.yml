@@ -4,7 +4,7 @@ tagline:             A bit of everything from Berlin.
 login:               <%= ENV["obtvse_login"] ? ENV["obtvse_login"] : "username" %>
 password:            <%= ENV["obtvse_password"] ? ENV["obtvse_password"] : "password" %>
 name:                Joost Oostdijk
-twitter:             http://twitter.com/joustava
+twitter:             joustava
 github:              https://github.com/joustava
 email:               joustava@gmail.com
 google_analytics_id: UA-37405240-1
