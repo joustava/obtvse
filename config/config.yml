@@ -6,6 +6,7 @@ password:            <%= ENV["obtvse_password"] ? ENV["obtvse_password"] : "pass
 name:                Joost Oostdijk
 twitter:             joustava
 github:              joustava
+bitbucket_url:       http://bitbucket.oostdijk.net/
 email:               joustava@gmail.com
 google_analytics_id: UA-37405240-1
-disqus_shortname:    <%= ENV.fetch("disqus_shortname") { "" } %>
+disqus_shortname:    blogginginberlin

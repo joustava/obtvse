@@ -189,7 +189,7 @@ DEPENDENCIES
   jquery-rails (~> 2)
   kaminari (~> 0.13)
   pg (~> 0.13)
-  rails (~> 3)
+  rails (= 3.2.11)
   rails_best_practices (~> 1)
   redcarpet
   sass-rails (~> 3)
