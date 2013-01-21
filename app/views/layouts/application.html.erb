@@ -23,18 +23,18 @@
         <li>Contact</li>
         <ul class="link-list">
           <% if CONFIG['twitter'] %>
-            <li><%= link_to '', 'http://twitter.com/' + CONFIG['twitter'], class: 'fc-webicon twitter small', alt: twitter%></li>
+            <li><%= link_to CONFIG['twitter'], 'http://twitter.com/' + CONFIG['twitter'], class: 'fc-webicon twitter small', title: 'twitter'%></li>
           <% end %>
           <% if CONFIG['github'] %>
-            <li><%= link_to '', 'https://github.com/' + CONFIG['github'], class: 'fc-webicon github small'%></li>
+            <li><%= link_to CONFIG['github'], 'http://github.com/' + CONFIG['github'], class: 'fc-webicon github small', title: 'github'%></li>
           <% end %>
           <% if CONFIG['bitbucket_url'] %>
-            <li><%= link_to '', CONFIG['bitbucket'], class: 'fc-webicon bitbucket small'%></li>
+            <li><%= link_to CONFIG['bitbucket_url'], CONFIG['bitbucket_url'], class: 'fc-webicon bitbucket small', title: 'bitbucket'%></li>
           <% end %>
           <% if CONFIG['linkedin'] %>
-          <li><%= link_to '', 'https://' + CONFIG['linkedin'], class: 'fc-webicon linkedin small'%></li>
+          <li><%= link_to CONFIG['linkedin'], 'http://' + CONFIG['linkedin'], class: 'fc-webicon linkedin small', title: 'linkedin'%></li>
           <% end %>
-          <li><%= link_to '', '/posts.rss', class: 'fc-webicon rss small' %></li>
+          <li><%= link_to '', '/posts.rss', class: 'fc-webicon rss small', title: 'rss feed'%></li>
         </ul>
         <li>
           Powered by <a href="http://github.com/natew/obtvse.git">Obtvse</a>
