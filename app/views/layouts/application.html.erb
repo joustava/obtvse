@@ -7,6 +7,7 @@
   <meta name="author" content="<%= CONFIG['name'] %>">
   <link href="/posts.rss" rel="alternate" title="RSS" type="application/rss+xml" />
   <link href='http://fonts.googleapis.com/css?family=Lato:300,900' rel='stylesheet' type='text/css' />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body class="<%= controller_name %> <%= action_name %>">
@@ -15,25 +16,36 @@
     <h1><%= link_to CONFIG['title'], root_url %></h1>
     <span><%= CONFIG['tagline'].html_safe %></span>
     <ul>
-      <% if CONFIG['twitter'] %>
-        <li><%= link_to '@' + CONFIG['twitter'], 'http://twitter.com/' + CONFIG['twitter'] %></li>
-      <% end %>
-      <% if CONFIG['github'] %>
-        <li><%= link_to 'github', 'https://github.com/' + CONFIG['github'] %></li>
-      <% end %>
-      <% if CONFIG['bitbucket_url'] %>
-        <li><%= link_to 'bitbucket', CONFIG['bitbucket_url'] %></li>
-      <% end %>
-      <% if CONFIG['email'] %>
-        <li><%= link_to 'say hi', "mailto:#{CONFIG['email']}?subject:whats up!" %></li>
-      <% end %>
-      <li><%= link_to 'rss feed', '/posts.rss' %></li>
+      
     </ul>
     <span class="powered-by">
-      Powered by <a href="http://github.com/natew/obtvse.git">Obtvse</a>
-      <% if is_admin? %> &nbsp;&middot;&nbsp; <a href="/admin">Admin</a><% end %>
-  </span>
-
+      <ul>
+        <li>Contact</li>
+        <ul class="link-list">
+          <% if CONFIG['twitter'] %>
+            <li><%= link_to '', 'http://twitter.com/' + CONFIG['twitter'], class: 'fc-webicon twitter small', alt: twitter%></li>
+          <% end %>
+          <% if CONFIG['github'] %>
+            <li><%= link_to '', 'https://github.com/' + CONFIG['github'], class: 'fc-webicon github small'%></li>
+          <% end %>
+          <% if CONFIG['bitbucket_url'] %>
+            <li><%= link_to '', CONFIG['bitbucket'], class: 'fc-webicon bitbucket small'%></li>
+          <% end %>
+          <% if CONFIG['linkedin'] %>
+          <li><%= link_to '', 'https://' + CONFIG['linkedin'], class: 'fc-webicon linkedin small'%></li>
+          <% end %>
+          <li><%= link_to '', '/posts.rss', class: 'fc-webicon rss small' %></li>
+        </ul>
+        <li>
+          Powered by <a href="http://github.com/natew/obtvse.git">Obtvse</a>
+          <% if is_admin? %> &nbsp;&middot;&nbsp; <a href="/admin">Admin</a><% end %>
+        </li>
+        <li>
+          Running on <a href="http://http://www.heroku.com/">Heroku</a>
+        </li> 
+      </ul>
+      
+    </span>
   </header>
   <% end %>
 

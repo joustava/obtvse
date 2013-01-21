@@ -46,4 +46,5 @@ group :assets do
   gem 'sass-rails', '~> 3'
   gem 'coffee-rails', '~> 3'
   gem 'uglifier', '~> 1'
+  gem 'compass-rails'
 end

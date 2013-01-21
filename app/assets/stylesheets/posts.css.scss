@@ -43,7 +43,7 @@ a:visited
 a:active {
   color: #000;
   text-decoration: none;
-  border-bottom: 1px solid #ddd;
+  #border-bottom: 1px solid #ddd;
 }
 
 a:hover,
@@ -78,7 +78,7 @@ header {
   li {
     margin: 0 0 3px 0;
 
-    a {
+    a.header {
       padding: 2px 0;
       color: #888;
       border-bottom: 2px solid #eee;

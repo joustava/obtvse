@@ -5,6 +5,7 @@ login:               <%= ENV["obtvse_login"] ? ENV["obtvse_login"] : "username" 
 password:            <%= ENV["obtvse_password"] ? ENV["obtvse_password"] : "password" %>
 name:                Joost Oostdijk
 twitter:             joustava
+linkedin:            fi.linkedin.com/in/joostoostdijk
 github:              joustava
 bitbucket_url:       http://bitbucket.oostdijk.net/
 email:               joustava@gmail.com
