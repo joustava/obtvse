@@ -32,17 +32,22 @@
             <li><%= link_to CONFIG['bitbucket_url'], CONFIG['bitbucket_url'], class: 'fc-webicon bitbucket small', title: 'bitbucket'%></li>
           <% end %>
           <% if CONFIG['linkedin'] %>
-          <li><%= link_to CONFIG['linkedin'], 'http://' + CONFIG['linkedin'], class: 'fc-webicon linkedin small', title: 'linkedin'%></li>
+            <li><%= link_to CONFIG['linkedin'], 'http://' + CONFIG['linkedin'], class: 'fc-webicon linkedin small', title: 'linkedin'%></li>
           <% end %>
+          <li><%= link_to '', 'http://www.joost.oostdijk.net/', class: 'fc-webicon rss small', title: 'cv'%></li>
           <li><%= link_to '', '/posts.rss', class: 'fc-webicon rss small', title: 'rss feed'%></li>
         </ul>
         <li>
           Powered by <a href="http://github.com/natew/obtvse.git">Obtvse</a>
-          <% if is_admin? %> &nbsp;&middot;&nbsp; <a href="/admin">Admin</a><% end %>
         </li>
         <li>
           Running on <a href="http://http://www.heroku.com/">Heroku</a>
-        </li> 
+        </li>
+        <% if is_admin? %>
+          <li>
+            <a href="/admin">Admin</a>
+          </li>
+        <% end %>
       </ul>
       
     </span>
