@@ -34,14 +34,16 @@
           <% if CONFIG['linkedin'] %>
             <li><%= link_to CONFIG['linkedin'], 'http://' + CONFIG['linkedin'], class: 'fc-webicon linkedin small', title: 'linkedin'%></li>
           <% end %>
-          <li><%= link_to '', 'http://www.joost.oostdijk.net/', class: 'fc-webicon rss small', title: 'cv'%></li>
-          <li><%= link_to '', '/posts.rss', class: 'fc-webicon rss small', title: 'rss feed'%></li>
+          <li><%= link_to '', 'http://www.joost.oostdijk.net/', class: 'fc-webicon aboutme small', title: 'cv'%></li> 
         </ul>
         <li>
           Powered by <a href="http://github.com/natew/obtvse.git">Obtvse</a>
         </li>
         <li>
           Running on <a href="http://http://www.heroku.com/">Heroku</a>
+        </li>
+        <li>
+          <%= link_to '', '/posts.rss', class: 'fc-webicon rss small', title: 'rss feed'%>
         </li>
         <% if is_admin? %>
           <li>
